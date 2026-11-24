@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LA CASA — Where Connections Become Business || AREA RISERVATA ||</title>
+    <title>LA CASA — Where Connections Become Business || HOME ||</title>
     <meta name="description" content="Piattaforma internazionale di connessioni interculturali tra Brasile, Italia, Europa, America e Monaco.">
     <link rel="stylesheet" href="style/style.css">
 
 </head>
 <body>
+
     <input type="radio" name="site-language" id="lang-it" class="sr-radio" checked>
+    <input type="radio" name="site-language" id="lang-pt" class="sr-radio">
+    <input type="radio" name="site-language" id="lang-en" class="sr-radio">
+    <input type="radio" name="site-language" id="lang-fr" class="sr-radio">
     <input type="checkbox" id="mobile-menu-toggle" class="sr-radio">
+
     <div class="site-wrapper">
 
         <!-- ==================================================================
@@ -23,25 +28,250 @@
                         <span class="brand-name">LA CASA</span>
                     </span>
                 </a>
+                <a href="index.html" class="log-out">
+                    <span class="log-out-text">Esci</span>
+                </a>
         </header>
 
-        <!-- ==================================================================
-             ACCESSO AREA RISERVATA
-             ================================================================== -->
-             
-        <section class="section bg-linen" id="box-accesso">
-            <div class="accesso">
-                <h2>Accesso Area Riservata</h2>
-                <form>
-                    <div class="form-group">
-                        <label for="username">Username</label>
-                        <input type="text" id="username" name="username" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password" required>
-                    </div>
-                    <button class="btn btn-gold" type="submit">Accedi</button>
-                </form>
+
+<!-- ==================================================================
+             I 9 SETTORI DI ATTIVITÀ (PURE CSS <details>/<summary>)
+================================================================== -->
+        <section id="settori" class="section bg-ivory">
+            <div class="container">  
+                <div data-lang="it">
+                    <h2 class="section-title">Networking</h2>
+                </div>
+
+                <div class="sectors-grid">
+                    <!-- 1. Arte e Cultura -->
+                    <details class="sector-card">
+                        <summary>
+                            <div class="sector-top"><span class="sector-num">01</span><span class="sector-plus">+</span></div>
+                            <div>
+                                <h3>Arte e<br>Cultura</h3>
+                                <div>
+                                    <img class="profilo" src="https://plus.unsplash.com/premium_photo-1689551670902-19b441a6afde?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Arte e Cultura" class="sector-image">
+                                </div>
+                            </div>
+                        </summary>
+                        <div class="sector-detail">
+                            <table border="1" cellpadding="8" cellspacing="0">
+                                <tbody>
+                                    <tr>
+                                        <td>Nome Azienda</td><td>Abcd</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nome Persona</td><td>Mario Rossi</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Indirizzo</td><td>via Roma, 1 - 01234 Qualcosa</td>
+                                    </tr>
+                                    <tr>
+                                        <td>email</td><td>mario.rossi@example.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>telefono</td><td>06 1234567</td>
+                                    </tr>
+                                    <tr>
+                                        <td>cellulare</td><td>322 1234567</td>
+                                    </tr>
+                                    <tr>
+                                        <td>p.iva/C.F.</td><td>01234567890</td>
+                                    </tr>
+                                    <tr>
+                                        <td>sito internet</td><td>https://www.example.com</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </details>
+
+                    <!-- 2. Cittadinanza e Internazionalizzazione -->
+                    <details class="sector-card">
+                        <summary>
+                            <div class="sector-top"><span class="sector-num">02</span><span class="sector-plus">+</span></div>                       
+                            <div>
+                                <h3>Cidadania e Internacionalização</h3>
+                                <div>
+                                    <img class="profilo" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Cidadania e Internacionalização" class="sector-image">
+                                </div>
+                        </summary>
+                        <div class="sector-detail">
+                            <table border="1" cellpadding="8" cellspacing="0">
+                                <tbody>
+                                    <tr>
+                                        <td>Nome Azienda</td><td>Abcd</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nome Persona</td><td>Mario Rossi</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Indirizzo</td><td>via Roma, 1 - 01234 Qualcosa</td>
+                                    </tr>
+                                    <tr>
+                                        <td>email</td><td>mario.rossi@example.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>telefono</td><td>06 1234567</td>
+                                    </tr>
+                                    <tr>
+                                        <td>cellulare</td><td>322 1234567</td>
+                                    </tr>
+                                    <tr>
+                                        <td>p.iva/C.F.</td><td>01234567890</td>
+                                    </tr>
+                                    <tr>
+                                        <td>sito internet</td><td>https://www.example.com</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </details>
+
+                    <!-- 3. Medicina Estetica e Bellezza -->
+                    <details class="sector-card">
+                        <summary>
+                            <div class="sector-top"><span class="sector-num">03</span><span class="sector-plus">+</span></div>
+                            <div>
+                                <h3>Medicina Estética e<br>Beleza</h3>
+                                <div>
+                                    <img class="profilo" src="https://plus.unsplash.com/premium_photo-1664363807265-cd6eab507bac?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Medicina Estética e Beleza" class="sector-image">
+                                </div>
+                        </summary>
+                        <div class="sector-detail">
+                            <table border="1" cellpadding="8" cellspacing="0">
+                                <tbody>
+                                    <tr>
+                                        <td>Nome Azienda</td><td>Abcd</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nome Persona</td><td>Mario Rossi</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Indirizzo</td><td>via Roma, 1 - 01234 Qualcosa</td>
+                                    </tr>
+                                    <tr>
+                                        <td>email</td><td>mario.rossi@example.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>telefono</td><td>06 1234567</td>
+                                    </tr>
+                                    <tr>
+                                        <td>cellulare</td><td>322 1234567</td>
+                                    </tr>
+                                    <tr>
+                                        <td>p.iva/C.F.</td><td>01234567890</td>
+                                    </tr>
+                                    <tr>
+                                        <td>sito internet</td><td>https://www.example.com</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </details>
+
+                    <!-- 4. Media e Televisione -->
+                    <details class="sector-card">
+                        <summary>
+                            <div class="sector-top"><span class="sector-num">04</span><span class="sector-plus">+</span></div>
+                            <div data-lang="it"><h3>Media e Televisione</h3><p class="sector-short">Televisione, stampa, influencer, comunicazione e produzioni audiovisive.</p></div>
+                            <div data-lang="pt"><h3>Mídia e Televisão</h3><p class="sector-short">Televisão, imprensa, influenciadores, comunicação e produções audiovisuais.</p></div>
+                            <div data-lang="en"><h3>Media &amp; Television</h3><p class="sector-short">Television, press, influencers, communications, and audiovisual productions.</p></div>
+                            <div data-lang="fr"><h3>Médias et Télévision</h3><p class="sector-short">Télévision, presse, influenceurs, communication et productions audiovisuelles.</p></div>
+                        </summary>
+                        <div class="sector-detail">
+                            <div data-lang="it"><p>Relazioni stampa in Brasile e Italia, co-produzioni televisive e cinematografiche, format internazionali e posizionamento mediatico.</p><a href="#contatti">Connettiti con i media &rarr;</a></div>
+                            <div data-lang="pt"><p>Assessoria de imprensa no Brasil e na Itália, coproduções televisivas e audiovisuais, formatos internacionais e visibilidade.</p><a href="#contatti">Conectar com mídia &rarr;</a></div>
+                            <div data-lang="en"><p>Press relations across Brazil and Italy, television and film co-productions, international formats, and media positioning.</p><a href="#contatti">Connect with media &rarr;</a></div>
+                            <div data-lang="fr"><p>Relations presse au Brésil et en Italie, coproductions télévisuelles et audiovisuelles, formats internationaux et visibilité.</p><a href="#contatti">Contacter les médias &rarr;</a></div>
+                        </div>
+                    </details>
+
+                    <!-- 5. Gastronomia e Lifestyle -->
+                    <details class="sector-card">
+                        <summary>
+                            <div class="sector-top"><span class="sector-num">05</span><span class="sector-plus">+</span></div>
+                            <div data-lang="it"><h3>Gastronomia e Lifestyle</h3><p class="sector-short">Ristoranti, esperienze gastronomiche e prodotti.</p></div>
+                            <div data-lang="pt"><h3>Gastronomia e Lifestyle</h3><p class="sector-short">Restaurantes, experiências gastronômicas e produtos.</p></div>
+                            <div data-lang="en"><h3>Gastronomy &amp; Lifestyle</h3><p class="sector-short">Restaurants, culinary experiences, and fine products.</p></div>
+                            <div data-lang="fr"><h3>Gastronomie et Lifestyle</h3><p class="sector-short">Restaurants, expériences gastronomiques et produits.</p></div>
+                        </summary>
+                        <div class="sector-detail">
+                            <div data-lang="it"><p>Internazionalizzazione di ristoranti, import-export di eccellenze enogastronomiche italiane e brasiliane, degustazioni private e hospitality.</p><a href="#contatti">Espandi il tuo brand &rarr;</a></div>
+                            <div data-lang="pt"><p>Internacionalização de restaurantes, importação e exportação de produtos gourmet e vinhos, degustações exclusivas e hospitalidade.</p><a href="#contatti">Expandir marca &rarr;</a></div>
+                            <div data-lang="en"><p>International restaurant expansion, import-export of Italian and Brazilian culinary delicacies, private tastings, and hospitality.</p><a href="#contatti">Expand your brand &rarr;</a></div>
+                            <div data-lang="fr"><p>Internationalisation de restaurants, import-export de produits gastronomiques et viticoles, dégustations privées et hôtellerie.</p><a href="#contatti">Développer votre marque &rarr;</a></div>
+                        </div>
+                    </details>
+
+                    <!-- 6. Nautica e Turismo -->
+                    <details class="sector-card">
+                        <summary>
+                            <div class="sector-top"><span class="sector-num">06</span><span class="sector-plus">+</span></div>
+                            <div data-lang="it"><h3>Nautica e Turismo</h3><p class="sector-short">Imbarcazioni, esperienze esclusive, turismo e destinazioni internazionali.</p></div>
+                            <div data-lang="pt"><h3>Náutica e Turismo</h3><p class="sector-short">Embarcações, experiências exclusivas, turismo e destinos internacionais.</p></div>
+                            <div data-lang="en"><h3>Yachting &amp; Tourism</h3><p class="sector-short">Vessels, exclusive experiences, luxury travel, and international destinations.</p></div>
+                            <div data-lang="fr"><h3>Nautisme et Tourisme</h3><p class="sector-short">Navires, expériences exclusives, tourisme et destinations internationales.</p></div>
+                        </summary>
+                        <div class="sector-detail">
+                            <div data-lang="it"><p>Cantieri nautici, charter di yacht, itinerari esclusivi e partnership tra Mediterraneo, Principato di Monaco e coste brasiliane.</p><a href="#contatti">Attiva partnership &rarr;</a></div>
+                            <div data-lang="pt"><p>Estaleiros, charter de iates, roteiros exclusivos e parcerias entre o Mediterrâneo, Mônaco e o litoral brasileiro.</p><a href="#contatti">Ativar parceria &rarr;</a></div>
+                            <div data-lang="en"><p>Shipyards, yacht charters, bespoke itineraries, and partnerships connecting the Mediterranean, Monaco, and the Brazilian coast.</p><a href="#contatti">Activate partnership &rarr;</a></div>
+                            <div data-lang="fr"><p>Chantiers navals, location de yachts, itinéraires sur mesure et partenariats entre la Méditerranée, Monaco et le Brésil.</p><a href="#contatti">Activer un partenariat &rarr;</a></div>
+                        </div>
+                    </details>
+
+                    <!-- 7. Musica e Intrattenimento -->
+                    <details class="sector-card">
+                        <summary>
+                            <div class="sector-top"><span class="sector-num">07</span><span class="sector-plus">+</span></div>
+                            <div data-lang="it"><h3>Musica e Intrattenimento</h3><p class="sector-short">Artisti, concerti, festival e produzione di eventi.</p></div>
+                            <div data-lang="pt"><h3>Música e Entretenimento</h3><p class="sector-short">Artistas, shows, festivais e produção de eventos.</p></div>
+                            <div data-lang="en"><h3>Music &amp; Entertainment</h3><p class="sector-short">Artists, concerts, festivals, and event production.</p></div>
+                            <div data-lang="fr"><h3>Musique et Divertissement</h3><p class="sector-short">Artistes, concerts, festivals et production d'événements.</p></div>
+                        </summary>
+                        <div class="sector-detail">
+                            <div data-lang="it"><p>Produzione di concerti, tournée internazionali, festival culturali e collaborazione tra artisti e promoter di Sud America ed Europa.</p><a href="#contatti">Proponi un progetto &rarr;</a></div>
+                            <div data-lang="pt"><p>Produção de shows, turnês internacionais, festivais culturais e colaboração entre artistas e produtores da América do Sul e Europa.</p><a href="#contatti">Propor projeto &rarr;</a></div>
+                            <div data-lang="en"><p>Concert production, international tours, cultural festivals, and collaborations among artists and promoters in South America and Europe.</p><a href="#contatti">Submit a project &rarr;</a></div>
+                            <div data-lang="fr"><p>Production de concerts, tournées internationales, festivals culturels et collaborations entre artistes d'Amérique du Sud et d'Europe.</p><a href="#contatti">Proposer un projet &rarr;</a></div>
+                        </div>
+                    </details>
+
+                    <!-- 8. Eventi e Networking -->
+                    <details class="sector-card">
+                        <summary>
+                            <div class="sector-top"><span class="sector-num">08</span><span class="sector-plus">+</span></div>
+                            <div data-lang="it"><h3>Eventi e Networking</h3><p class="sector-short">Incontri imprenditoriali, cene, presentazioni e incontri d’affari.</p></div>
+                            <div data-lang="pt"><h3>Eventos e Networking</h3><p class="sector-short">Encontros empresariais, jantares, apresentações e rodadas de negócios.</p></div>
+                            <div data-lang="en"><h3>Events &amp; Networking</h3><p class="sector-short">Business gatherings, private dinners, showcases, and deal roundtables.</p></div>
+                            <div data-lang="fr"><h3>Événements et Networking</h3><p class="sector-short">Rencontres d'affaires, dîners, présentations et réunions d'affaires.</p></div>
+                        </summary>
+                        <div class="sector-detail">
+                            <div data-lang="it"><p>Salotti imprenditoriali riservati, cene di gala, presentazioni di brand e incontri d'affari a numero chiuso a Milano, Rio, Roma e Monaco.</p><a href="#contatti">Partecipa agli incontri &rarr;</a></div>
+                            <div data-lang="pt"><p>Encontros empresariais reservados, jantares de gala, apresentações de marcas e rodadas de negócios em Milão, Rio, Roma e Mônaco.</p><a href="#contatti">Participar dos encontros &rarr;</a></div>
+                            <div data-lang="en"><p>Curated executive salons, gala dinners, brand launches, and private deal roundtables in Milan, Rio, Rome, and Monaco.</p><a href="#contatti">Join our gatherings &rarr;</a></div>
+                            <div data-lang="fr"><p>Salons d'affaires privés, dîners de gala, présentations de marques et rencontres à Milan, Rio, Rome et Monaco.</p><a href="#contatti">Participer aux rencontres &rarr;</a></div>
+                        </div>
+                    </details>
+
+                    <!-- 9. Mondo Digitale -->
+                    <details class="sector-card">
+                        <summary>
+                            <div class="sector-top"><span class="sector-num">09</span><span class="sector-plus">+</span></div>
+                            <div data-lang="it"><h3>Mondo Digitale</h3><p class="sector-short">Social network, presenza digitale, siti web, posizionamento dei brand e comunicazione internazionale.</p></div>
+                            <div data-lang="pt"><h3>Mundo Digital</h3><p class="sector-short">Redes sociais, presença digital, websites, posicionamento de marcas e comunicação internacional.</p></div>
+                            <div data-lang="en"><h3>Digital World</h3><p class="sector-short">Social networks, digital presence, websites, brand positioning, and international comms.</p></div>
+                            <div data-lang="fr"><h3>Monde Digital</h3><p class="sector-short">Réseaux sociaux, présence digitale, sites web, positionnement des marques et communication.</p></div>
+                        </summary>
+                        <div class="sector-detail">
+                            <div data-lang="it"><p>Posizionamento digitale internazionale, piattaforme web istituzionali, strategie social multilingue e identità visiva per mercati esteri.</p><a href="#contatti">Potenzia il tuo brand &rarr;</a></div>
+                            <div data-lang="pt"><p>Posicionamento digital internacional, plataformas web institucionais, estratégias multilíngues e identidade visual para novos mercados.</p><a href="#contatti">Potencializar marca &rarr;</a></div>
+                            <div data-lang="en"><p>International digital positioning, institutional web platforms, multilingual social strategies, and brand identity for global markets.</p><a href="#contatti">Elevate your brand &rarr;</a></div>
+                            <div data-lang="fr"><p>Positionnement digital international, plateformes web institutionnelles, stratégies multilingues et identité de marque.</p><a href="#contatti">Valoriser votre marque &rarr;</a></div>
+                        </div>
+                    </details>
+                </div>
             </div>
         </section>

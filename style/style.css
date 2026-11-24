@@ -1272,7 +1272,7 @@ details.sector-card h3 {
 }
 
 /* ==========================================================================
-           12. ACCESSO AREA RISERVATA
+           12. LOG IN
 ========================================================================== */
 
 #box-accesso {
@@ -1308,4 +1308,32 @@ details.sector-card h3 {
   color: var(--ink-charcoal);
   font-family: var(--font-sans);
   font-size: 0.92rem;
+}
+
+
+/* ==========================================================================
+           13. AREA RISERVATA
+========================================================================== */
+
+.profilo {
+  width: 100%;
+  max-width: 200px;
+  margin-top: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 2px 2px 4px rgba(24, 24, 24, 0.1);
+}
+
+table {
+  border-radius: var(--radius-sm);
+}
+
+td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border-subtle);
+  border: none;
 }
