@@ -5,7 +5,7 @@
   --bg-linen: #F2EDE4;
   --bg-white: #FFFFFF;
   --ink-charcoal: #181818;
-  --ink-espresso: #211F1D;
+  --ink-espresso: rgb(33, 31, 29);
   --ink-muted: #5C5750;
   --gold-satin: #9A7B4F;
   --gold-light: #C6A97A;
@@ -607,7 +607,7 @@ h2.section-title {
 }
 
 @media (min-width: 960px) {
-  .bridge-box {
+  .bridge-box, .bridge-eventi {
     padding: 4rem;
   }
 }
@@ -790,7 +790,41 @@ h2.section-title {
 ========================================================================== */
 
 #eventi {
-  background-image: url('pictures/eventi-sfondo.jpg');
+  background-image: url('../pictures/eventi-sfondo.jpg');
+}
+
+.bridge-eventi {
+  background: rgba(33,21,29,0.9);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  box-shadow: 0 24px 50px -20px rgba(24, 24, 24, 0.35);
+}
+
+#kicker-eventi {
+  color: var(--gold-light);
+}
+
+#eventi-title {
+  color: var(--bg-ivory);
+}
+
+.bridge-eventi p.lead-text {
+  color: var(--bg-ivory);
+}
+
+.video-container {
+  text-align: center;
+  margin: auto;
+  opacity: 1;
+  margin-top: 2rem;
+}
+
+#prossimi-eventi {
+  color: var(--gold-light);
+}
+
+#eventi-description {
+  margin-bottom: 1.5rem;
 }
 
 /* ==========================================================================
