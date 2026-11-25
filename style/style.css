@@ -394,6 +394,40 @@ h2.section-title {
   width: 100%;
 }
 
+.site-header {
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+}
+
+.icona-lucchetto {
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+.lucchetto-sfondo {
+  fill: var(--gold-satin);
+  transition: fill 0.25s ease, transform 0.25s ease;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.lucchetto-corpo {
+  fill: #ffffff;
+  transition: fill 0.25s ease;
+}
+
+/* Esempio di interazione al passaggio del mouse sul link */
+.logo-link:hover .lucchetto-sfondo {
+  fill: #fffdf5;
+  transition: var(--transition);
+}
+
+.logo-link:hover .lucchetto-corpo {
+  fill: var(--gold-satin);
+}
+
 /* ==========================================================================
            5. HERO SECTION
 ========================================================================== */
@@ -412,9 +446,9 @@ h2.section-title {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(to bottom, rgba(24, 24, 24, 0.84), rgba(24, 24, 24, 0.76) 50%, #181818),
+    linear-gradient(to bottom, rgba(24, 24, 24, 0.84), rgba(24, 24, 24, 0.76) 30%, #181818),
     radial-gradient(circle at top right, rgba(154, 123, 79, 0.25), transparent 60%),
-    url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1920&q=80');
+    url('https://images.unsplash.com/photo-1515169067868-5387ec356754?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D');
   background-size: cover;
   background-position: center;
   z-index: 0;
